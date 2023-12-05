@@ -8,6 +8,7 @@ spec:
       elements:
       - namespace: dev
         url: https://kubernetes.default.svc
+        path: deploy/overlays/cluster1
       - namespace: qa
         url: https://kubernetes.default.svc
       - namespace: prod
@@ -24,3 +25,4 @@ spec:
       destination:
         server: '{{"{{"}}url{{"}}"}}'
         namespace: '{{"{{"}}namespace{{"}}"}}'
+        path: '{{"{{"}}path{{"}}"}}'
