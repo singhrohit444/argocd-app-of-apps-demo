@@ -10,7 +10,7 @@ spec:
     namespace: dev #gitops-kubecon-demo
   project: kubecon-demo
   source:
-    path: deploy/overlays/dev
+    path: deploy/overlays/cluster1
     repoURL: https://github.com/singhrohit444/argocd-app-of-apps-demo.git
     targetRevision: HEAD
 ---
@@ -25,7 +25,7 @@ spec:
     namespace: qa #gitops-kubecon-demo
   project: kubecon-demo
   source:
-    path: deploy/overlays/qa
+    path: deploy/overlays/cluster2
     repoURL: https://github.com/singhrohit444/argocd-app-of-apps-demo.git
     targetRevision: HEAD
 ---
@@ -40,6 +40,6 @@ spec:
     namespace: prod #gitops-kubecon-demo
   project: kubecon-demo
   source:
-    path: deploy/overlays/prod
+    path: deploy/overlays/cluster3
     repoURL: https://github.com/singhrohit444/argocd-app-of-apps-demo.git
     targetRevision: HEAD
